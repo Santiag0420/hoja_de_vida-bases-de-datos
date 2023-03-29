@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Secular+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    overflow:hidden;
+    min-height: 700px;
+    background: linear-gradient(90deg, rgba(27,159,116,1) 0%, rgba(32,195,143,1) 36%, rgba(0,255,171,1) 100%);
+}
+
+/*Estilos barra de navegacion Layout*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*Estilos logo de la barra */
+.logo {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+/*Estilos vinculos de la barra */
+.barraNav a {
+    font-size: 20px;
+    color: rgb(149, 255, 220);
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 50px;
+}
+
+/*Estilos acciones de la barra */
+
+.barraNav a.accion, 
+.barraNav a:hover {
+    background: linear-gradient(90deg, rgba(27,159,116,1) 0%, rgba(32,195,143,1) 36%, rgba(0,255,171,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+}
+/*------------------------------------HOME-----------------------------------------------------*/
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: rgb(194, 255, 235);
+}
+
+ video{
+    width: 100%;
+    pointer-events: none; 
+}
+
+.home-content{
+    position: absolute;
+}
+
+.btn{
+    padding: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(200, 255, 237);
+    text-decoration: none;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(27,159,116,1) 0%, rgba(32,195,143,1) 36%, rgba(0,255,171,1) 100%);
+    border-radius: 20px;
+
+}
+
+/*----------------------------------EXPERIENCIA-------------------------------------------------------*/
+.proyectos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content:  center;
+    position:absolute;
+    color: aquamarine;
+
+}
+
+.proyectos-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.content1 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+.content1 h1{
+    position: absolute;
+    left: 230px;
+    top: 440px;
+}
+
+
+.content1 video{
+    width: 500px;
+    height: 500px;
+    left: 200px;
+    top: 50px;
+    position: absolute;
+}
+
+.content2{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+.content2 h1{
+    position: absolute;
+    right: 230px;
+    top: 440px;
+}
+
+.content2 video{
+    width: 500px;
+    height: 500px;
+    right: 200px;
+    top: 50px;
+    position: absolute;
+
+}
+
+.content3{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top:50%;
+}
+
+.content3 h1{
+    position: absolute;
+    left: 320px;
+    bottom: 100px;
+}
+
+.content3 video{
+    width: 500px;
+    height: 500px;
+    left: 200px;
+    bottom: 50px;
+    position: absolute;
+}
+
+.content4{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+}
+
+.content4 h1{
+    position: absolute;
+    right: 190px;
+    bottom: 100px;
+    
+}
+
+
+.content4 video{
+    width: 150px;
+    height: 500px;
+    bottom: 50px;
+    right:350px;
+    position: absolute;
+}
+
+
+
+
+/*----------------------------------HABILIDADES-------------------------------------------------------*/
+
+.habilidades{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content:  center;
+    position:absolute;
+}
+
+.content_c{
+    width: 33.3%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: rgb(183, 255, 231) solid;
+}
+
+.content_c h3{
+    position: absolute;
+    top: 100px;
+    left: 310px;
+    text-align: left;
+    font-weight: 1000;
+    color: aquamarine;
+}
+
+
+.content_c h5{
+    position: absolute;
+    top: 150px;
+    left: 310px;
+    text-align: left;
+    color: rgb(183, 255, 231);
+}
+
+.content_c #imagen_c{
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+
+
+.content_javascript{
+    width: 33.3%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    left: 33.3%;
+    top: 0;
+    border-bottom: rgb(183, 255, 231) solid;
+}
+
+.content_javascript h3{
+    position: absolute;
+    top: 300px;
+    left: 225px;
+    text-align: center;
+    font-weight: 1000;
+    color: aquamarine;
+}
+
+.content_javascript h5{
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    text-align: center;
+    color: rgb(183, 255, 231);
+}
+
+.content_javascript #imagen_javascript{
+
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+
+
+.content_java{
+    width: 33.3%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    left: 66.6%;
+    top: 0;
+    border-bottom: rgb(183, 255, 231) solid;
+}
+
+.content_java h3{
+    position: absolute;
+    top: 100px;
+    right: 310px;
+    text-align: right;
+    font-weight: 1000;
+    color: aquamarine; 
+}
+
+.content_java h5{
+    position: absolute;
+    top: 150px;
+    right: 310px;
+    text-align: right;
+    color: rgb(183, 255, 231);
+}
+
+
+
+.content_java #imagen_java{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.content_excel{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    left:0;
+    top: 50%;
+    border-right: rgb(183, 255, 231) solid ;
+}
+
+
+.content_excel h3{
+    position: absolute;
+    top: 50px;
+    left: 310px;
+    text-align: left;
+    font-weight: 1000;
+    color: aquamarine;
+}
+
+.content_excel h5{
+    position: absolute;
+    top: 100px;
+    left: 310px;
+    text-align: left;
+    color: rgb(183, 255, 231);
+}
+
+.content_excel #imagen_excel{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.content_arduino{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    left:50%;
+    top: 50%;
+}
+
+.content_arduino h3{
+    position: absolute;
+    top: 50px;
+    right: 310px;
+    text-align: right;
+    font-weight: 1000;
+    color: aquamarine;
+}
+
+.content_arduino h5{
+    position: absolute;
+    top: 100px;
+    right: 310px;
+    text-align: right;
+    color: rgb(183, 255, 231);
+}
+
+.content_arduino #imagen_arduino{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+/*-------------------------------------------------------CONTACTO-----------------------------------------------*/
+
+
+.contacto {
+    width: 100%;
+    height: 100%;
+}
+
+.principal{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.principal #nombre {
+    position: absolute;
+    font-size: 120px;
+    font-weight: 600;
+    color: aquamarine;
+    bottom: 60%;
+    left: 180px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.principal #apellido{
+    position: absolute;
+    font-size: 120px;
+    font-weight: 600;
+    color: aquamarine;
+    left: 180px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.principal #apellido2{
+    position: absolute;
+    font-size: 120px;
+    font-weight: 600;
+    color: aquamarine;
+    bottom: 20%;
+    left: 180px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+
+.informacion{
+    width: 100%;
+    height: 30%;
+    top: 70%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 15px 10%;
+    justify-content: space-between;
+}
+
+.foto{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto img{
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

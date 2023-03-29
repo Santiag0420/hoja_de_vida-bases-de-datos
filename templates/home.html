@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/main.css')}}">
+    <title>Inicio</title>
+    
+</head>
+
+<body>
+    
+    <section class="home">
+        <div class= "overlay"></div>
+        <div class="home-content">   
+            <div>
+                <p><h1>Hola, soy Santiago Fernandez Guzman</h1></p>
+                <h2>Ingeniero de Sistemas en potencia</h2> 
+                <br> Me caracterizo por ser una persona con iniciativa, voluntad y eficiencia en el momento de realizar
+                <br> mis responsabilidades, siendo tambien una persona abierta al conocimineto y con la voluntad
+                <br> de aprender dia a dia algo nuevo que me permita formarme en mi carrera y como persona.</p> 
+                
+                <a href="{{url_for ('contacto')}}" class="btn">Contactame</a>  
+            </div>        
+            
+        </div>
+        <video onloadedmetadata="this.muted=true" autoplay loop>
+            <source src="{{url_for('static', filename='videos/kannah.mp4')}}">
+        </video>
+      </section>
+    
+
+
+</body>
+
+</html>
+{% endblock %}

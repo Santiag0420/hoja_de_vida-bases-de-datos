@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+    <section class="habilidades">
+        <div class="habilidades-content">
+
+            <div class="content_c">
+                <h3>C++</h3>
+                <h5>
+                    Cuento con experiencia en el lenguaje de C++ la cual la adquirí
+                    por medio del curso de Programacion orientada a Objetos
+                </h5>
+            
+                <div id="imagen_c">
+                    <img src="{{url_for('static', filename='images/c++_logo.png')}}" width="200" height="200">
+                </div>
+
+            </div>
+           
+
+            <div class="content_javascript">
+                <h3>JavaScript</h3>
+                <h5>
+                    Experiencia en el lenguaje de JavaScript la cual adquiri en el curso de
+                    Introduccion a la Programacion y fue enforcado en el paradigma funcional
+                </h5>
+                <div id="imagen_javascript">
+                    <img src="{{url_for('static', filename='images/javascript_logo.png')}}" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="content_java">
+                <h3>Java</h3>
+                <h5>
+                    Mi experiencia en el lenjuage de Java fue enfocada en el ambito interactivo
+                </h5>
+                
+                <div id="imagen_java">
+                    <img src="{{url_for('static', filename='images/java_logo.png')}}" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="content_excel">
+                <h3>Excel basico y avanzado</h3>
+                <h5>En cuanto a excel tengo un curso de 50 horas de excel basico
+                    y otro de 50 horas en Excel Avanzado en la Unicauca
+                </h5>
+                <div id="imagen_excel">
+                    <img src="{{url_for('static', filename='images/excel_logo.png')}}" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="content_arduino">
+                <h3>Arduino</h3>
+                <h5>Cuento con experiencia en la plataforma Arduino ya que mi equipo de trabajo y yo realizamos un
+                    proyecto el cual era un carro manejado por medio de Bluetooth
+                </h5>
+                <div id="imagen_arduino">
+                    <img src="{{url_for('static', filename='images/arduino_logo.png')}}" alt="" width="200" height="200">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <video onloadedmetadata="this.muted=true" autoplay loop>
+        <source src="{{url_for('static', filename='videos/matrix_recor.mp4')}}">
+    </video>
+
+</body>
+
+</html>
+
+
+{% endblock %}

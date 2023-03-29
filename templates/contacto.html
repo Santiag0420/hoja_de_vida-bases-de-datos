@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <section class="contacto">
+
+        <div class="principal">
+
+            <h1 id="nombre">Santiago</h1>
+            <h1 id="apellido">Fernandez</h1>
+            <h1 id="apellido2">Guzman</h1>
+
+        </div>
+
+        <div class="foto">
+           
+             <img src="{{url_for('static', filename='images/mi_gata_nojada.jpeg')}}" width="60%" height="70%">
+        </div>
+
+        <div class="informacion">
+            
+            <div id="correoI">
+                <h4>Correo institucional:</h4>
+                <h5>santiago.fernandez.guzman@correounivalle.edu.co</h5>
+            </div>
+            
+
+            <div id="numero">
+                <h4>Numero personal:</h4>
+                <h5>3135599135</h5>
+            </div>
+            
+
+            <div id="correoP">
+                <h4>Correo personal:</h4>
+                <h5>santifernandez082013@gmail.com</h5>
+            </div>
+           
+
+        </div>
+    </section>
+
+    <video onloadedmetadata="this.muted=true" autoplay loop>
+        <source src="{{url_for('static', filename='videos/kannah.mp4')}}">
+    </video>
+
+
+
+
+</body>
+
+</html>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <section class="proyectos">
+        <div class="proyectos-content">
+            <div class="content1">
+                <h1>Pac Man - JavaScript</h1>
+                <div id="video_pac_man">
+                    <video autoplay muted>
+                        <source src="{{url_for('static', filename='videos/pac_mansito.mp4')}}">
+                    </video>
+                </div>
+            </div>
+
+            <div class="content2">
+                <h1>Tower Blaster - C++</h1>
+                <div id="tower_video">
+                    <video autoplay muted>
+                        <source src="{{url_for('static', filename='videos/tower_blaster.mp4')}}">
+                    </video>
+
+                </div>
+            </div>
+
+            <div class="content3">
+                <h1>Snake-Java</h1>
+                <div id="snake_video">
+                    <video autoplay muted>
+                        <source src="{{url_for('static', filename='videos/snake_java.mp4')}}">
+                    </video>
+                </div>
+            </div>
+
+            <div class="content4">
+                <h1>Carro Bluetooth - Arduino</h1>
+                <div id="arduino_video">
+                    <video autoplay muted>
+                        <source src="{{url_for('static', filename='videos/arduino_video.mp4')}}">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <video onloadedmetadata="this.muted=true" autoplay loop>
+        <source src="{{url_for('static', filename='videos/matrix_recor.mp4')}}">
+    </video>
+
+
+
+</body>
+
+</html>
+
+{% endblock %}
